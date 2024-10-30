@@ -62,7 +62,7 @@ export const NationalityStep = ({ formData, handleInputChange, countries, setSte
           <label className="block text-sm text-gray-600 mb-1">ID Number *</label>
         <input
           type="text"
-          placeholder="ID Number *"
+          placeholder={`${formData.nationality.idType || "ID"} Number *`}
           value={formData.nationality.idNumber}
           onChange={e => handleInputChange('nationality', 'idNumber', e.target.value)}
           className="w-full p-4 border rounded-lg bg-gray-50"

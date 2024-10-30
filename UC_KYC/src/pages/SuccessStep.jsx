@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import Lottie from 'react-lottie-player';
 import successAnimation from './Success.json';
 import { motion } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
 
 const SuccessStep = () => {
   const [showText, setShowText] = useState(false);
-
+const navigate=useNavigate();
   useEffect(() => {
     // Show text after a short delay
     const timer = setTimeout(() => {
@@ -30,10 +31,18 @@ const SuccessStep = () => {
           transition={{ duration: 1 }}
           className="mt-6"
         >
-          <h2 className="text-2xl font-semibold text-green-600">Details Submitted Successfully!</h2>
+          <h2 className="text-2xl font-semibold text-green-600">Thank You For Registering With Us!!</h2>
           <p className="text-gray-600 mt-2">
-            You will receive a response soon.
+          Your details are submitted successfully.
+          <br />
+          Please check after some time for your KYC status.
           </p>
+          <button
+        onClick={()=>navigate("/")}
+        className="flex-1 bg-[#011452] text-white px-8 py-3 mt-8 rounded-lg hover:bg-[#0b33b8] transition-colors"
+      >
+        Go To Home
+      </button>
         </motion.div>
       )}
     </div>

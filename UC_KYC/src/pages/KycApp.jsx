@@ -6,7 +6,7 @@ import { PersonalInfoStep } from './PersonalInfoStep';
 import { NationalityStep } from './NationalityStep';
 import { AddressStep } from './AddressStep';
 import { ReviewStep } from './ReviewStep';
-import { DocumentCaptureStep } from './CaptureDoc';
+import  {DocumentCaptureStep}  from './CaptureDoc';
 import SelfieStep from './SelfieStep';
 import SuccessStep from './SuccessStep';
 

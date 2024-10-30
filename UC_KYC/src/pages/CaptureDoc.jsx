@@ -169,16 +169,22 @@ export const DocumentCaptureStep = ({ formData, handleInputChange, setStep }) =>
                     </div>
                     <div className="mt-4 flex justify-center gap-4">
                       <button
-                        onClick={() => setAspectRatio(16 / 9)}
-                        className={`px-3 py-2 ${aspectRatio === 16 / 9 ? 'bg-[#011452] text-white' : 'bg-gray-100'}`}
+                        onClick={() => setAspectRatio(4 / 2)}
+                        className={`px-3 py-2 ${aspectRatio === 4 / 2 ? 'bg-[#011452] text-white' : 'bg-gray-100'}`}
                       >
-                        16:9
+                        4:2
                       </button>
                       <button
                         onClick={() => setAspectRatio(3 / 2)}
                         className={`px-3 py-2 ${aspectRatio === 3 / 2 ? 'bg-[#011452] text-white' : 'bg-gray-100'}`}
                       >
                         3:2
+                      </button>
+                      <button
+                        onClick={() => setAspectRatio(2 / 1)}
+                        className={`px-3 py-2 ${aspectRatio === 2 / 1 ? 'bg-[#011452] text-white' : 'bg-gray-100'}`}
+                      >
+                        2:1
                       </button>
                       <button
                         onClick={() => setAspectRatio(1 / 1)}

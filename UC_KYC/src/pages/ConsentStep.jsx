@@ -8,7 +8,9 @@ export const ConsentStep = ({ setStep, }) => (
     animate={{ opacity: 1, x: 0 }}
     exit={{ opacity: 0, x: '-100%' }}
   >
-    <h2 className="text-4xl text-center font-bold mb-4">Welcome to Universal KYC program</h2>
+    <h2 className="text-4xl text-center font-bold mb-4">Welcome to
+        <br />
+         Universal KYC program</h2>
     <div className="bg-white p-6 my-8 rounded-lg shadow-md mb-8">
       <h3 className="text-xl font-semibold mb-4">Terms and Conditions</h3>
       <div className="prose prose-sm mb-8">
